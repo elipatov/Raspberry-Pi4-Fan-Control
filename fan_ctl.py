@@ -9,13 +9,13 @@ import os
 # Configuration
 FAN_PIN = 18            # BCM pin used to drive PWM fan. Hardware PWM available on GPIO12, GPIO13, GPIO18, GPIO19
 WAIT_TIME = 1           # [s] Time to wait between each refresh
-PWM_FREQ = 100           # [Hz] PWM frequency. Adjust it modify noise
+PWM_FREQ = 14           # [Hz] PWM frequency. Adjust it modify PWM noise
 
 # Configurable temperature and fan speed
-CUTOFF_TEMP = 60
+CUTOFF_TEMP = 59
 MIN_TEMP = 65
 MAX_TEMP = 75
-FAN_LOW = 60
+FAN_LOW = 50
 FAN_HIGH = 100
 FAN_OFF = 0
 FAN_MAX = 100
