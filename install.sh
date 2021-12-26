@@ -4,8 +4,8 @@ set -e
 
 echo "=> Installing fan controller...\n"
 sudo mkdir /opt/fan-ctl/
-sudo cp fan_ctl.py /opt/fan-ctl/
-sudo chmod +x /opt/fan-ctl/fan_ctl.py
+sudo cp fan_ctl_12v.py /opt/fan-ctl/
+sudo chmod +x /opt/fan-ctl/fan_ctl_12v.py
 
 echo "=> Starting fan controller...\n"
 sudo cp fan_ctl.sh /etc/init.d/

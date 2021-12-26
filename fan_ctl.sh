@@ -11,12 +11,12 @@
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
-    echo "Starting fan_ctl.py"
-    /opt/fan-ctl/fan_ctl.py &
+    echo "Starting fan_ctl_12v.py"
+    /opt/fan-ctl/fan_ctl_12v.py &
     ;;
   stop)
-    echo "Stopping fan_ctl.py"
-    pkill -f /opt/fan-ctl/fan_ctl.py
+    echo "Stopping fan_ctl_12v.py"
+    pkill -f /opt/fan-ctl/fan_ctl_12v.py
     ;;
   *)
     echo "Usage: /etc/init.d/fan_ctl.sh {start|stop}"
